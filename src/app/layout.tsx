@@ -5,6 +5,7 @@ import clsx from 'clsx'
 import '@/styles/tailwind.css'
 import GoogleAnalytics from './GoogleAnalytics'
 import GA4PageView from './GA4PageView'
+import { Suspense } from 'react'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tlahtolli.ai'),
@@ -107,7 +108,9 @@ export default function RootLayout({
         {ga && process.env.NODE_ENV === 'production' && (
           <GoogleAnalytics measurementId={ga} />
         )}
-        {ga && <GA4PageView />}
+        <Suspense fallback={null}>
+          {ga && <GA4PageView />}
+        </Suspense>
       </body>
     </html>
   )
