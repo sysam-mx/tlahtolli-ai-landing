@@ -47,7 +47,7 @@ function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: P
 
       {/* CTA con tu Button */}
       <Button
-        href="https://app.tlahtolli.ai/signup"
+        href="https://auth.tlahtolli.ai/users/sign_up"
         variant="solid"
         color="slate"
         className="mt-3 w-full rounded-md text-tlahtolli-light"
@@ -59,7 +59,7 @@ function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: P
             item_id: 'signup',
             location: 'pricing',
             destination: 'app',
-            url: 'https://app.tlahtolli.ai/signup',
+            url: 'https://auth.tlahtolli.ai/users/sign_up',
             site: 'landing',
           },
           once: true,

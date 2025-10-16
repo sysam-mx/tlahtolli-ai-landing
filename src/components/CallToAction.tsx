@@ -33,7 +33,7 @@ export function CallToAction() {
             </p>
 
             <Button
-              href="https://app.tlahtolli.ai/signup"
+              href="https://auth.tlahtolli.ai/users/sign_up"
               color="white"
               className="mt-8"
               ga={{
@@ -43,7 +43,7 @@ export function CallToAction() {
                   item_id: 'signup',
                   location: 'call_to_action',
                   destination: 'app',
-                  url: 'https://app.tlahtolli.ai/signup',
+                  url: 'https://auth.tlahtolli.ai/users/sign_up',
                   site: 'landing',
                 },
                 once: true,

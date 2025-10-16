@@ -129,7 +129,7 @@ function MobileNavigation() {
               item_id: 'login',
               location: 'header',
               destination: 'app',
-              url: 'https://app.tlahtolli.ai/login',
+              url: 'https://auth.tlahtolli.ai/users/sign_in',
               site: 'landing',
             })
           }
@@ -201,14 +201,14 @@ export function Header() {
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
               <NavLink
-                href="https://app.tlahtolli.ai/login"
+                href="https://auth.tlahtolli.ai/users/sign_in"
                 onClick={() =>
                   track('select_content', {
                     content_type: 'auth',
                     item_id: 'login',
                     location: 'header',
                     destination: 'app',
-                    url: 'https://app.tlahtolli.ai/login',
+                    url: 'https://auth.tlahtolli.ai/users/sign_in',
                     site: 'landing',
                   })
                 }
@@ -217,7 +217,7 @@ export function Header() {
               </NavLink>
             </div>
             <Button
-              href="https://app.tlahtolli.ai/signup"
+              href="https://auth.tlahtolli.ai/users/sign_up"
               color="tlahtolli"
               ga={{
                 event: 'generate_lead',
@@ -226,7 +226,7 @@ export function Header() {
                   item_id: 'signup',
                   location: 'header',
                   destination: 'app',
-                  url: 'https://app.tlahtolli.ai/signup',
+                  url: 'https://auth.tlahtolli.ai/users/sign_up',
                   site: 'landing',
                 },
                 once: true,
