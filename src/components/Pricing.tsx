@@ -14,10 +14,10 @@ type Pack = {
 }
 
 const PACKS: Pack[] = [
-  { id: 'prod_T0c7Fs7hTG2vBT', name: '200K Tokens', hint: '≈ 1 semana',  tokensLabel: '+ 200000 tokens', priceLabel: '$41.05', currencyLabel: 'MXN' },
-  { id: 'prod_T0cLAKV7L2BJUF', name: '400K Tokens', hint: '≈ 2 semanas',  tokensLabel: '+ 400000 tokens', priceLabel: '$75.56', currencyLabel: 'MXN' },
-  { id: 'prod_T0cN6CsIUQK7qp', name: '600K Tokens', hint: '≈ 3 semanas', tokensLabel: '+ 600000 tokens', priceLabel: '$110.08', currencyLabel: 'MXN' },
-  { id: 'prod_T0cPStrUK6l5wA', name: '800K Tokens', hint: '≈ 4 semanas', tokensLabel: '+ 800000 tokens', priceLabel: '$144.59', currencyLabel: 'MXN' },
+  { id: 'prod_T0c7Fs7hTG2vBT', name: '500k Tokens', hint: '≈ 5-9 días',  tokensLabel: '+ 500000 tokens', priceLabel: '$39.77', currencyLabel: 'MXN' },
+  { id: 'prod_T0cLAKV7L2BJUF', name: '700k Tokens', hint: '≈ 10-14 días',  tokensLabel: '+ 700000 tokens', priceLabel: '$48.62', currencyLabel: 'MXN' },
+  { id: 'prod_T0cN6CsIUQK7qp', name: '900k Tokens', hint: '≈ 15-19 días', tokensLabel: '+ 900000 tokens', priceLabel: '$57.48', currencyLabel: 'MXN' },
+  { id: 'prod_T0cPStrUK6l5wA', name: '1.1M Tokens', hint: '≈ 20-24 días', tokensLabel: '+ 1100000 tokens', priceLabel: '$66.33', currencyLabel: 'MXN' },
 ]
 
 function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: Pack) {
