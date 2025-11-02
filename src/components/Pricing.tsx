@@ -22,7 +22,7 @@ const PACKS: Pack[] = [
 
 function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: Pack) {
   return (
-    <li className="flex flex-col rounded-2xl border border-gray-200 bg-white p-5 shadow-md transition-transform duration-150 sm:p-6">
+    <li className="flex flex-col rounded-2xl bg-white p-5 shadow-xl transition-transform duration-150 sm:p-6 hover:scale-105 hover:shadow-2xl cursor-pointer">
       {/* Header */}
       <header className="flex items-center justify-center gap-2 text-center">
         <h3 className="text-lg font-semibold text-tlahtolli-secondary">{name}</h3>
@@ -31,7 +31,7 @@ function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: P
         </span>
       </header>
 
-      <hr className="my-3 border-gray-100" />
+      <hr className="my-3 border-gray-200" />
 
       {/* Descripción */}
       <div className="flex flex-col items-center gap-1">
@@ -46,7 +46,7 @@ function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: P
       </div>
 
       {/* CTA con tu Button */}
-      <Button
+      {/* <Button
         href="https://auth.tlahtolli.ai/users/sign_up"
         variant="solid"
         color="slate"
@@ -66,18 +66,18 @@ function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: P
         }}
       >
         Recargar
-      </Button>
+      </Button> */}
     </li>
   )
 }
 
 export function Pricing() {
   return (
-    <section id="pricing" aria-label="Paquetes de tokens" className="bg-tlahtolli-text py-16 sm:py-24">
+    <section aria-label="Paquetes de tokens" className="bg-tlahtolli-text/80 pb-16 sm:pb-24">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Elige tu paquete
+            Después solo elige tu paquete
           </h2>
           <p className="mt-3 text-base tracking-tight text-white/85 sm:text-lg">
             Recarga flexible, sin planes ni compromiso. Elige un paquete hoy, úsalo a tu ritmo y vuelve a recargar cuando quieras.

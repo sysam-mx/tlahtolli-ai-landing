@@ -15,11 +15,11 @@ export function Hero() {
       <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-6xl">
         Aprende vocabulario en distintos idiomas con{' '}<br />
         <span className="text-tlahtolli-secondary">
-          <span className="relative">AI y Repetición Espaciada</span>
+          <span className="relative">IA y Repetición Espaciada</span>
         </span>
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        La AI personaliza tu práctica y la repetición espaciada refuerza tu memoria. Más fácil, más rápido, más duradero.
+        La IA personaliza tu práctica y la repetición espaciada refuerza tu memoria. Más fácil, más rápido, más duradero.
       </p>
       <div className="my-10 flex justify-center gap-x-6">
         {/* <Button href="/register">Get 6 months free</Button> */}

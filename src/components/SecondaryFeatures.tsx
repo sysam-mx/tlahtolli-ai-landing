@@ -121,7 +121,7 @@ function FeaturesDesktop() {
                 feature={{
                   ...feature,
                   name: (
-                    <Tab className="data-selected:not-data-focus:outline-hidden">
+                    <Tab className="data-selected:not-data-focus:outline-hidden cursor-pointer">
                       <span className="absolute inset-0" />
                       {feature.name}
                     </Tab>

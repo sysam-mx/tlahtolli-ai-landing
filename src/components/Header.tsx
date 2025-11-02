@@ -91,19 +91,19 @@ function MobileNavigation() {
           ¿Cómo funciona?
         </MobileNavLink>
         <MobileNavLink
-          href="#testimonials"
+          href="#languages"
           onClick={() =>
             track('select_content', {
               content_type: 'nav',
-              item_id: 'testimonials',
+              item_id: 'languages',
               location: 'header',
               destination: 'web',
-              url: 'https://www.tlahtolli.ai/#testimonials',
+              url: 'https://www.tlahtolli.ai/#get-started-today',
               site: 'landing',
             })
           }
         >
-          Testimonio
+          Idiomas
         </MobileNavLink>
         <MobileNavLink
           href="#pricing"
@@ -167,19 +167,19 @@ export function Header() {
                 ¿Cómo funciona?
               </NavLink>
               <NavLink
-                href="#testimonials"
+                href="#languages"
                 onClick={() =>
                   track('select_content', {
                     content_type: 'nav',
-                    item_id: 'testimonials',
+                    item_id: 'languages',
                     location: 'header',
                     destination: 'web',
-                    url: 'https://www.tlahtolli.ai/#testimonials',
+                    url: 'https://www.tlahtolli.ai/#languages',
                     site: 'landing',
                   })
                 }
               >
-                Testimonio
+                Idiomas
               </NavLink>
               <NavLink
                 href="#pricing"
@@ -232,7 +232,7 @@ export function Header() {
                 once: true,
               }}
             >
-              <span>Comienza Hoy <span className="hidden lg:inline">Mismo</span></span>
+              <span>Regístrate</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

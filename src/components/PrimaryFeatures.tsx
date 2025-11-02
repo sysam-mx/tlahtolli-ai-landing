@@ -21,7 +21,7 @@ const features = [
     image: screenshotCatalogS1,
   },
   {
-    title: 'Chat interactivo (AI)',
+    title: 'Chat interactivo (IA)',
     description:
       'Practica cada expresión en diálogo: el asistente te pregunta, evalúa y corrige para que suenes natural. También te muestra ejemplos y audio.',
     image: screenshotChatS1,
@@ -69,11 +69,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Aprende por temas, practica con AI y consolida con repaso inteligente
+            Aprende por temas, practica con IA y consolida con repaso inteligente
           </h2>
           <p className="mt-6 text-lg tracking-tight text-white">
             Tú eliges los temas y el sistema arma tu lista según tus preferencias.
-            Practicas en un chat guiado con AI y repites justo a tiempo para recordar más.
+            Practicas en un chat guiado con IA y repites justo a tiempo para recordar más.
           </p>
         </div>
         <TabGroup
@@ -97,7 +97,7 @@ export function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            'font-display text-lg data-selected:not-data-focus:outline-hidden',
+                            'font-display text-lg data-selected:not-data-focus:outline-hidden cursor-pointer',
                             selectedIndex === featureIndex
                               ? 'text-blue-600 lg:text-white'
                               : 'text-blue-100 hover:text-white lg:text-white',
@@ -112,7 +112,7 @@ export function PrimaryFeatures() {
                           'mt-2 hidden text-sm lg:block',
                           selectedIndex === featureIndex
                             ? 'text-white'
-                            : 'text-blue-100 group-hover:text-white',
+                            : 'text-tlahtolli-cream group-hover:text-white',
                         )}
                       >
                         {feature.description}

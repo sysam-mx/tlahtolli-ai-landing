@@ -33,7 +33,7 @@ export function LanguagesShowcase() {
 
   return (
     <section
-      id="languages"
+      // id="languages"
       aria-labelledby="languages-title"
       className="relative overflow-hidden bg-gradient-to-r from-tlahtolli-primary via-tlahtolli-accent to-tlahtolli-secondary pb-20 sm:pb-24"
     >
@@ -66,7 +66,7 @@ export function LanguagesShowcase() {
                 : 'Próximamente'
 
             const cardClass = clsx(
-              'w-full max-w-44 rounded-2xl p-4 text-center shadow-lg ring-1 ring-black/5',
+              'w-full max-w-44 rounded-2xl p-4 text-center shadow-lg ring-1 ring-black/5 hover:scale-105 hover:shadow-2xl cursor-pointer',
               isAvailable ? 'bg-white' : 'bg-white/90 backdrop-blur'
             )
 

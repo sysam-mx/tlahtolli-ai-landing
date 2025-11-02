@@ -6,7 +6,7 @@ export function Logo(props: React.ComponentPropsWithoutRef<'img'>) {
     <Image
       src={logoTlahtolli}
       alt="Logo"
-      width={150}
+      width={170}
       unoptimized
     />
   )
