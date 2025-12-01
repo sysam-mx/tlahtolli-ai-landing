@@ -15,28 +15,28 @@ import screenshotStatsS1 from '@/images/screenshots/p-stats-s1.png'
 
 const features = [
   {
-    title: 'Selección por temas',
+    title: 'Practica con el asistente de IA',
     description:
-      'Indica los temas que te interesan y la dificultad de la sesión. Con un clic, el sistema genera tu lista actual de estudio. ¿Cambiaste de objetivo? Regenera la selección en cualquier momento.',
-    image: screenshotCatalogS1,
-  },
-  {
-    title: 'Chat interactivo (IA)',
-    description:
-      'Practica cada expresión en diálogo: el asistente te pregunta, evalúa y corrige para que suenes natural. También te muestra ejemplos y audio.',
+      'Chatea con un asistente diseñado para ayudarte a practicar el vocabulario que realmente necesitas. Practica cada expresión en diálogo: la IA te pregunta, evalúa tus respuestas y corrige errores al instante. Además, te muestra ejemplos, traducciones y audio para reforzar el aprendizaje.',
     image: screenshotChatS1,
   },
   {
-    title: 'Mi biblioteca',
+    title: 'Elige contenido que sí te interesa',
     description:
-      'Mira todas las palabras y frases que ya practicaste con métricas rápidas para entender tu avance. Ordena y filtra por temas, encuentra lo que necesitas al instante y decide con confianza qué retomar en tu próxima sesión.',
-    image: screenshotMyLibraryS1,
+      'Selecciona los temas que se ajustan a tu vida diaria —comida, viajes, trabajo, conversaciones casuales, etc. Con un clic, la plataforma genera una lista personalizada de vocabulario listo para practicar en el asistente de IA. ¿Cambiaste de objetivo o quieres un tema nuevo? Regenera la selección cuando quieras: todo se ajusta en segundos para mantener tus sesiones frescas y relevantes.',
+    image: screenshotCatalogS1,
   },
   {
-    title: 'Estadísticas y progreso',
+    title: 'Mide tu avance y progreso',
     description:
-      'Sigue tu racha de un vistazo. El panel muestra aciertos/errores, tasa de éxito, idioma, etc. Además de un mapa de calor de actividad, la tendencia diaria de práctica y un ranking semanal por temas para visualizar tu evolución.',
+      'Consulta tu racha de práctica, aciertos/errores, tasa de éxito y actividad diaria en un panel claro y fácil de entender. El mapa de calor, las tendencias de uso y el ranking semanal por temas te ayudan a visualizar tu evolución y a mantenerte motivado mientras avanzas.',
     image: screenshotStatsS1,
+  },
+  {
+    title: 'Explora el vocabulario que ya dominas',
+    description:
+      'Revisa todas las palabras y frases que has practicado con indicadores rápidos para medir tu dominio. Ordena y filtra por temas, encuentra lo que necesitas al instante y decide qué reforzar en tu próxima sesión. Toda tu biblioteca está organizada para ayudarte a avanzar de forma inteligente.',
+    image: screenshotMyLibraryS1,
   },
 ]
 
@@ -69,15 +69,16 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Aprende por temas, practica con IA y consolida con repaso inteligente
+            ¿Qué es tlahtolli.ai?
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-white">
-            Tú eliges los temas y el sistema arma tu lista según tus preferencias.
-            Practicas en un chat guiado con IA y repites justo a tiempo para recordar más.
+          <p className="mt-6 text-xl tracking-tight text-white">
+            Es un asistente de IA diseñado para practicar vocabulario —no un curso tradicional.
+            tlahtolli.ai te ayuda a entrenar distintos idiomas repitiendo, reforzando y dominando expresiones y palabras que realmente usas en la vida diaria.
+            Es muy fácil de usar:
           </p>
         </div>
         <TabGroup
-          className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
+          className="grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
           vertical={tabOrientation === 'vertical'}
         >
           {({ selectedIndex }) => (
@@ -88,7 +89,7 @@ export function PrimaryFeatures() {
                     <div
                       key={feature.title}
                       className={clsx(
-                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-none lg:p-6',
+                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-xl lg:p-6',
                         selectedIndex === featureIndex
                           ? 'bg-white lg:bg-white/20 lg:ring-1 lg:ring-white/10 lg:ring-inset'
                           : 'hover:bg-white/10 lg:hover:bg-white/5',
@@ -130,7 +131,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-180 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-271.25">
+                    <div className="mt-10 w-80 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-271.25">
                       <Image
                         className="w-full"
                         src={feature.image}
