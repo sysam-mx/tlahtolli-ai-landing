@@ -38,7 +38,7 @@ export function Hero() {
 
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-24">
-      <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-6xl">
+      <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-6xl space-y-2">
         Aprende vocabulario <br />
         en{' '}
         <span className="inline-block text-tlahtolli-secondary">
@@ -51,7 +51,7 @@ export function Hero() {
               transition={{ duration: 0.04 }}
               className="inline-block whitespace-nowrap"
             >
-              "{LANGUAGES[index]}"
+              {`"${LANGUAGES[index]}"`}
             </motion.span>
           </AnimatePresence>
         </span>
