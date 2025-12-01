@@ -15,11 +15,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const LANGUAGES = [
-  "Inglés",
-  "Francés",
-  "Alemán",
-  "Italiano",
-  "Portugués",
+  "Inglés 🇺🇸",
+  "Francés 🇫🇷",
+  "Alemán 🇩🇪",
+  "Italiano 🇮🇹",
+  "Portugués 🇧🇷",
 ];
 
 // Palabra más larga → usamos para el width
@@ -51,13 +51,13 @@ export function Hero() {
               transition={{ duration: 0.04 }}
               className="inline-block whitespace-nowrap"
             >
-              {`"${LANGUAGES[index]}"`}
+              {`${LANGUAGES[index]}`}
             </motion.span>
           </AnimatePresence>
         </span>
         {' '}con<br />
         <span className="text-tlahtolli-secondary">
-          <span className="relative">IA y Repetición Espaciada</span>
+          <span className="relative">IA <span className='text-black'>y</span> Repetición Espaciada</span>
         </span>
       </h1>
 
