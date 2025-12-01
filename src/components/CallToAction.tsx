@@ -28,8 +28,8 @@ export function CallToAction() {
               Empieza hoy con tlahtolli.ai
             </h2>
             <p className="mt-4 text-lg tracking-tight text-white/90">
-              Recarga tokens, elige tus temas y practica en el chat con AI.
-              Toma minutos y puedes avanzar a tu ritmo, sin suscripciones.
+              Recarga tokens, elige tus temas y practica con el asistente de IA.
+              Solo toma unos minutos y avanzas a tu propio ritmo, sin planes forzosos ni suscripciones.
             </p>
 
             <Button
@@ -49,7 +49,7 @@ export function CallToAction() {
                 once: true,
               }}
             >
-              Comienza hoy mismo
+              Empieza a practicar
             </Button>
           </div>
 

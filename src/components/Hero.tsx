@@ -1,3 +1,5 @@
+"use client";
+
 import Image from 'next/image'
 
 import { Button } from '@/components/Button'
@@ -9,20 +11,80 @@ import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const LANGUAGES = [
+  "Inglés",
+  "Francés",
+  "Alemán",
+  "Italiano",
+  "Portugués",
+];
+
+// Palabra más larga → usamos para el width
+const LONGEST = LANGUAGES.reduce((a, b) => (a.length > b.length ? a : b), "");
+
 export function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % LANGUAGES.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-24">
       <h1 className="mx-auto max-w-4xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-6xl">
-        Aprende vocabulario en distintos idiomas con{' '}<br />
+        Aprende vocabulario <br />
+        en{' '}
+        <span className="inline-block text-tlahtolli-secondary">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0, position: "relative" }}
+              transition={{ duration: 0.04 }}
+              className="inline-block whitespace-nowrap"
+            >
+              "{LANGUAGES[index]}"
+            </motion.span>
+          </AnimatePresence>
+        </span>
+        {' '}con<br />
         <span className="text-tlahtolli-secondary">
           <span className="relative">IA y Repetición Espaciada</span>
         </span>
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        La IA personaliza tu práctica y la repetición espaciada refuerza tu memoria. Más fácil, más rápido, más duradero.
+
+      <p className="mx-auto mt-6 max-w-2xl text-xl tracking-tight text-slate-700">
+        Practica vocabulario real con Inteligencia Artificial, sin clases y sin complicaciones.
       </p>
       <div className="my-10 flex justify-center gap-x-6">
-        {/* <Button href="/register">Get 6 months free</Button> */}
+        {/* <Button href="/register">Empieza a practicar</Button> */}
+        <Button
+          href="https://auth.tlahtolli.ai/users/sign_up"
+          color="white"
+          className="text-tlahtolli-secondary text-lg border-2 border-tlahtolli-secondary px-6 py-3 hover:bg-white shadow-xl hover:scale-105 transition-transform hover:shadow-2xl"
+          ga={{
+            event: 'generate_lead',
+            params: {
+              cta: 'call_to_action_signup',
+              item_id: 'signup',
+              location: 'call_to_action',
+              destination: 'app',
+              url: 'https://auth.tlahtolli.ai/users/sign_up',
+              site: 'landing',
+            },
+            once: true,
+          }}
+        >
+          Comienza hoy mismo
+        </Button>
         <Button
           href="https://www.youtube.com/@tlahtolli-ai"
           color="tlahtolliSoft"
