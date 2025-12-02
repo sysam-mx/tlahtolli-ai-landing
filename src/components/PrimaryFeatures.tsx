@@ -17,7 +17,7 @@ const features = [
   {
     title: 'Practica con el asistente de IA',
     description:
-      'Chatea con un asistente diseñado para ayudarte a practicar el vocabulario que realmente necesitas. Practica cada expresión en diálogo: la IA te pregunta, evalúa tus respuestas y corrige errores al instante. Además, te muestra ejemplos, traducciones y audio para reforzar el aprendizaje.',
+      'Chatea con un asistente de Inteligencia Artificial y practica cada expresión en diálogo: la IA te pregunta, evalúa tus respuestas y corrige errores al instante. Además, te muestra ejemplos, traducciones y audio para reforzar el aprendizaje.',
     image: screenshotChatS1,
   },
   {
