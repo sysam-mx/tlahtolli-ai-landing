@@ -66,7 +66,6 @@ export function SecondaryFeatures() {
             onClick={handleVideoClick}
           >
             <source src="/videos/how-it-works.mp4" type="video/mp4" />
-            <source src="/videos/how-it-works.mov" type="video/quicktime" />
           </video>
           <div aria-hidden="true" className="relative">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
