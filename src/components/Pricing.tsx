@@ -1,96 +1,134 @@
 'use client'
 
-import { Container } from '@/components/Container'
+import clsx from 'clsx'
+import { useTranslations } from 'next-intl'
+import { LuCheck } from 'react-icons/lu'
 import { Button } from '@/components/Button'
-import { SiJsonwebtokens } from 'react-icons/si'
+import { useRegion } from '@/context/RegionContext'
+import type { Currency } from '@/utils/detectCurrency'
 
-type Pack = {
-  id: string
-  name: string
-  hint: string
-  tokensLabel: string
-  priceLabel: string
-  currencyLabel: string
+const PLAN_KEYS = ['starter', 'pro', 'power'] as const
+type PlanKey = (typeof PLAN_KEYS)[number]
+
+const PRICES: Record<PlanKey, Record<Currency, string>> = {
+  starter: { mxn: '$99', usd: '$7.99' },
+  pro:     { mxn: '$199', usd: '$15.99' },
+  power:   { mxn: '$299', usd: '$23.99' },
 }
 
-const PACKS: Pack[] = [
-  { id: 'prod_T0c7Fs7hTG2vBT', name: '500k Tokens', hint: '≈ 5-9 días',  tokensLabel: '+ 500000 tokens', priceLabel: '$39.77', currencyLabel: 'MXN' },
-  { id: 'prod_T0cLAKV7L2BJUF', name: '700k Tokens', hint: '≈ 10-14 días',  tokensLabel: '+ 700000 tokens', priceLabel: '$48.62', currencyLabel: 'MXN' },
-  { id: 'prod_T0cN6CsIUQK7qp', name: '900k Tokens', hint: '≈ 15-19 días', tokensLabel: '+ 900000 tokens', priceLabel: '$57.48', currencyLabel: 'MXN' },
-  { id: 'prod_T0cPStrUK6l5wA', name: '1.1M Tokens', hint: '≈ 20-24 días', tokensLabel: '+ 1100000 tokens', priceLabel: '$66.33', currencyLabel: 'MXN' },
-]
+const CURRENCY_LABEL: Record<Currency, string> = {
+  mxn: 'MXN',
+  usd: 'USD',
+}
 
-function TokenCard({ id, name, tokensLabel, hint, priceLabel, currencyLabel }: Pack) {
-  return (
-    <li className="flex flex-col rounded-2xl bg-white p-5 shadow-xl transition-transform duration-150 sm:p-6 hover:scale-105 hover:shadow-2xl cursor-pointer">
-      {/* Header */}
-      <header className="flex items-center justify-center gap-2 text-center">
-        <h3 className="text-lg font-semibold text-tlahtolli-secondary">{name}</h3>
-        <span className="text-tlahtolli-secondary">
-          <SiJsonwebtokens size={18} />
-        </span>
-      </header>
-
-      <hr className="my-3 border-gray-200" />
-
-      {/* Descripción */}
-      <div className="flex flex-col items-center gap-1">
-        <p className="px-2 text-[13px] font-medium text-emerald-600 sm:text-sm">{tokensLabel}</p>
-        <p className="px-2 text-center text-xs leading-snug text-gray-600 sm:text-[13px]">{hint}</p>
-      </div>
-
-      {/* Precio */}
-      <div className="mb-2 mt-3 flex items-baseline justify-center gap-1">
-        <span className="text-2xl font-extrabold text-slate-900 sm:text-3xl">{priceLabel}</span>
-        <span className="text-xs font-semibold uppercase text-gray-500">{currencyLabel}</span>
-      </div>
-
-      {/* CTA con tu Button */}
-      {/* <Button
-        href="https://auth.tlahtolli.ai/users/sign_up"
-        variant="solid"
-        color="slate"
-        className="mt-3 w-full rounded-md text-tlahtolli-light"
-        aria-label={`Recargar ${name} por ${priceLabel} ${currencyLabel}`}
-        ga={{
-          event: 'generate_lead',
-          params: {
-            cta: 'pricing_signup',
-            item_id: 'signup',
-            location: 'pricing',
-            destination: 'app',
-            url: 'https://auth.tlahtolli.ai/users/sign_up',
-            site: 'landing',
-          },
-          once: true,
-        }}
-      >
-        Recargar
-      </Button> */}
-    </li>
-  )
+const FEATURED: Record<PlanKey, boolean> = {
+  starter: false,
+  pro: true,
+  power: false,
 }
 
 export function Pricing() {
+  const t = useTranslations('pricing')
+  const { currency } = useRegion()
+
+  const tiers = PLAN_KEYS.map((key) => {
+    const featuresRaw = t.raw(`tiers.${key}.features`) as string[]
+    return {
+      key,
+      id: `tier-${key}`,
+      name: t(`tiers.${key}.name`),
+      description: t(`tiers.${key}.description`),
+      features: Array.isArray(featuresRaw) ? featuresRaw : [],
+      mostPopular: FEATURED[key],
+      price: PRICES[key][currency],
+      currencyLabel: CURRENCY_LABEL[currency],
+    }
+  })
+
   return (
-    <section aria-label="Paquetes de tokens" className="bg-tlahtolli-text/80 pb-16 sm:pb-24">
-      <Container>
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Después solo elige tu paquete
-          </h2>
-          <p className="mt-3 text-base tracking-tight text-white/85 sm:text-lg">
-            Recarga flexible, sin planes ni compromiso. Elige un paquete hoy, úsalo a tu ritmo y vuelve a recargar cuando quieras.
+    <section id="pricing" className="mt-32 sm:mt-40">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mt-2 text-balance text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+            {t('title')}
           </p>
         </div>
+        <p
+          className="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg/8 text-slate-600 sm:text-xl/8"
+          dangerouslySetInnerHTML={{ __html: t.raw('trialNote') as string }}
+        />
 
-        {/* Grid responsivo: 1 / 2 / 4 */}
-        <ul role="list" className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {PACKS.map((p) => (
-            <TokenCard key={p.id} {...p} />
+        <div className="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          {tiers.map((tier, tierIdx) => (
+            <div
+              key={tier.id}
+              className={clsx(
+                tier.mostPopular ? 'lg:z-10 lg:rounded-b-none' : 'lg:mt-8',
+                tierIdx === 0 ? 'lg:rounded-r-none' : '',
+                tierIdx === tiers.length - 1 ? 'lg:rounded-l-none' : '',
+                'flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-inset ring-slate-200 xl:p-10',
+              )}
+            >
+              <div>
+                <div className="flex items-center justify-between gap-x-4">
+                  <h3
+                    id={tier.id}
+                    className={clsx(
+                      tier.mostPopular ? 'text-tlahtolli-secondary' : 'text-slate-900',
+                      'text-lg/8 font-semibold',
+                    )}
+                  >
+                    {tier.name}
+                  </h3>
+                  {tier.mostPopular ? (
+                    <p className="rounded-full bg-tlahtolli-primary/10 px-2.5 py-1 text-xs/5 font-semibold text-tlahtolli-secondary">
+                      {t('mostPopular')}
+                    </p>
+                  ) : null}
+                </div>
+                <p className="mt-4 text-sm/6 text-slate-600">{tier.description}</p>
+                <p className="mt-6 flex items-baseline gap-x-1">
+                  <span className="text-4xl font-semibold tracking-tight text-slate-900">{tier.price}</span>
+                  <span className="text-sm/6 font-semibold text-slate-600">{tier.currencyLabel}{t('perMonth')}</span>
+                </p>
+                <ul role="list" className="mt-8 space-y-3 text-sm/6 text-slate-600">
+                  {tier.features.map((feature) => (
+                    <li key={feature} className="flex gap-x-3">
+                      <LuCheck aria-hidden="true" className="h-6 w-5 flex-none text-tlahtolli-primary" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <Button
+                href="https://auth.tlahtolli.ai/users/sign_up"
+                color={tier.mostPopular ? 'tlahtolli' : 'white'}
+                className={clsx(
+                  'mt-8 w-full text-center',
+                  tier.mostPopular
+                    ? ''
+                    : 'text-tlahtolli-secondary ring-1 ring-inset ring-tlahtolli-border hover:ring-tlahtolli-primary',
+                )}
+                ga={{
+                  event: 'generate_lead',
+                  params: {
+                    cta: 'pricing_signup',
+                    item_id: 'signup',
+                    location: 'pricing',
+                    plan: tier.key,
+                    destination: 'app',
+                    url: 'https://auth.tlahtolli.ai/users/sign_up',
+                    site: 'landing',
+                  },
+                  once: true,
+                }}
+              >
+                {t('ctaStart')}
+              </Button>
+            </div>
           ))}
-        </ul>
-      </Container>
+        </div>
+      </div>
     </section>
   )
 }

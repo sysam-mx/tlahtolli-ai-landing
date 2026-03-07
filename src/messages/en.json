@@ -1,0 +1,317 @@
+{
+  "header": {
+    "howItWorks": "How it works",
+    "languages": "Languages",
+    "pricing": "Pricing",
+    "signIn": "Sign In",
+    "signUp": "Sign Up"
+  },
+  "hero": {
+    "languages": [
+      "Spanish 🇪🇸",
+      "French 🇫🇷",
+      "German 🇩🇪",
+      "Italian 🇮🇹",
+      "Portuguese 🇧🇷",
+      "Náhuatl 🏵️"
+    ],
+    "titleStart": "Learn vocabulary in",
+    "titleEnd": "with an AI tutor",
+    "subtitle": "Practice by text or voice with a tutor that corrects you instantly. Choose your topics, reinforce with repetition and track your real progress.",
+    "freeTrialBold": "5 days free",
+    "freeTrialSuffix": "with the text tutor. No credit card needed.",
+    "ctaStart": "Start free",
+    "ctaVideo": "Watch video",
+    "screenshotAlt": "tlahtolli.ai AI Tutor practicing vocabulary"
+  },
+  "problem": {
+    "title": "Learning vocabulary in another language is hard",
+    "subtitle": "No matter how many apps you download or lists you save. Without real practice and feedback, vocabulary doesn't stick.",
+    "points": [
+      {
+        "title": "Too many words",
+        "description": "There are thousands of words and you don't know where to start or which ones you actually need."
+      },
+      {
+        "title": "You forget fast",
+        "description": "You memorize lists but forget them in days because you don't practice in context."
+      },
+      {
+        "title": "No visible progress",
+        "description": "You study without knowing if you're actually improving or just repeating the same things."
+      },
+      {
+        "title": "No constant guidance",
+        "description": "It's hard to stay consistent without someone to correct and motivate you."
+      }
+    ]
+  },
+  "solution": {
+    "title": "Meet your AI tutor",
+    "subtitle": "It's not a course or an app with random exercises. It's a smart conversation that guides you, corrects you and reinforces what you need to practice most.",
+    "screenshotAlt": "tlahtolli.ai AI Tutor in action",
+    "highlights": [
+      {
+        "name": "Practice by writing",
+        "description": "Translate words and phrases by typing. The tutor corrects you instantly with clear feedback and examples."
+      },
+      {
+        "name": "Practice with your voice",
+        "description": "Speak with the tutor to practice pronunciation and fluency. Listen, repeat and improve every session."
+      },
+      {
+        "name": "Spaced repetition",
+        "description": "Words you miss come back at just the right time so you memorize them long-term."
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "Start practicing in minutes",
+    "subtitle": "No complicated setup. Four steps and you're already learning.",
+    "steps": [
+      {
+        "name": "Choose your language",
+        "description": "English, Portuguese, French, German, Italian and Náhuatl available today. Switch languages anytime without losing your progress."
+      },
+      {
+        "name": "Select your topics",
+        "description": "Food, travel, work, casual conversations and more. Choose topics that fit your daily life and generate your vocabulary list."
+      },
+      {
+        "name": "Practice with the tutor",
+        "description": "By text or voice, the tutor asks questions, evaluates your answers instantly and gives you clear corrections with examples and audio."
+      },
+      {
+        "name": "Track your progress",
+        "description": "Check your streak, correct answers, errors, activity calendar and weekly ranking. Everything you need to see your real progress."
+      }
+    ]
+  },
+  "primaryFeatures": {
+    "title": "Everything you need to learn vocabulary",
+    "subtitle": "A complete platform that combines artificial intelligence, personalization and metrics so your practice is effective from day one.",
+    "features": [
+      {
+        "name": "Topic selection",
+        "description": "Choose relevant vocabulary for your life: food, travel, work, casual conversations and more."
+      },
+      {
+        "name": "Text and voice",
+        "description": "Practice by writing or speaking with the tutor. You decide how to train in each session."
+      },
+      {
+        "name": "Smart repetition",
+        "description": "Words you miss come back at just the right time. Memorize long-term without over-studying."
+      },
+      {
+        "name": "Multi-language",
+        "description": "English, Portuguese, French, German, Italian and the indigenous language Náhuatl. More languages coming soon."
+      },
+      {
+        "name": "Real statistics",
+        "description": "Practice streak, correct answers, errors, activity calendar and weekly ranking by topics."
+      },
+      {
+        "name": "Your vocabulary organized",
+        "description": "All the words you've practiced, with mastery indicators. Filter, sort and decide what to reinforce."
+      }
+    ]
+  },
+  "secondaryFeatures": {
+    "title": "This is what a practice session looks like",
+    "subtitle": "The tutor guides you step by step: asks a question, listens to your answer, evaluates and gives you feedback with examples and audio. All in a natural conversation.",
+    "screenshotAlt": "Practice session with the tlahtolli.ai AI tutor",
+    "subFeatures": [
+      {
+        "name": "Guided questions",
+        "description": "The tutor asks you questions about each expression and waits for your answer."
+      },
+      {
+        "name": "Voice mode",
+        "description": "Talk to the tutor using your microphone. Practice pronunciation in real time."
+      },
+      {
+        "name": "AI corrections",
+        "description": "Every answer gets instant evaluation with clear feedback and examples."
+      },
+      {
+        "name": "Integrated audio",
+        "description": "Listen to the correct pronunciation of each example to train your ear."
+      },
+      {
+        "name": "Hits and misses",
+        "description": "The tutor records each answer so you can see your success rate and know what to reinforce."
+      },
+      {
+        "name": "Smart repetition",
+        "description": "Words you miss come back until you master them."
+      }
+    ]
+  },
+  "personalization": {
+    "title": "Personalize your experience",
+    "subtitle": "Adjust the language, voice and audio of the tutor so every session feels like yours.",
+    "cards": [
+      {
+        "name": "Select your language",
+        "description": "English, Portuguese, French, German, Italian and Náhuatl available today. Switch languages anytime without losing your progress. More languages coming soon."
+      },
+      {
+        "name": "Choose the tutor voice",
+        "description": "Each voice has a different personality and style. Choose from 8 options and switch whenever you want from settings."
+      },
+      {
+        "name": "Chat audio",
+        "description": "Enable automatic reading of the tutor's examples to train your ear while you practice by text."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Choose the plan that fits you",
+    "trialNote": "All plans include a <strong>5-day free trial</strong> with full access to plan features. Payment method required when choosing your plan.",
+    "mostPopular": "Most popular",
+    "perMonth": "/mo",
+    "ctaStart": "Start free",
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "description": "Start with the essentials to practice and learn.",
+        "features": [
+          "AI text tutor",
+          "Smart repetition",
+          "Progress statistics",
+          "Vocabulary & exploration"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "More power to advance faster and with more control.",
+        "features": [
+          "Everything in Starter",
+          "Interactive voice mode",
+          "Higher usage capacity",
+          "Priority support"
+        ]
+      },
+      "power": {
+        "name": "Power",
+        "description": "The complete experience for intensive use.",
+        "features": [
+          "Everything in Pro",
+          "Maximum usage capacity",
+          "Dedicated support"
+        ]
+      }
+    }
+  },
+  "languages": {
+    "sectionLabel": "Languages & indigenous languages",
+    "title": "Practice in the language you need",
+    "subtitle": "5 languages and an indigenous language available today. Switch between them anytime without losing your progress.",
+    "idiomasLabel": "Languages",
+    "lenguasLabel": "Indigenous languages",
+    "available": "Available",
+    "comingSoon": "Coming soon",
+    "idiomas": [
+      {
+        "name": "Spanish",
+        "flag": "🇪🇸",
+        "description": "Spoken by over 500 million people worldwide."
+      },
+      {
+        "name": "Portuguese",
+        "flag": "🇧🇷",
+        "description": "Connect with over 250 million speakers."
+      },
+      {
+        "name": "French",
+        "flag": "🇫🇷",
+        "description": "Present in 5 continents and in diplomacy."
+      },
+      {
+        "name": "German",
+        "flag": "🇩🇪",
+        "description": "The largest economy in Europe."
+      },
+      {
+        "name": "Italian",
+        "flag": "🇮🇹",
+        "description": "Art, gastronomy and millennial culture."
+      }
+    ],
+    "lenguas": [
+      {
+        "name": "Náhuatl",
+        "flag": "🏵️",
+        "description": "The most spoken indigenous language in Mexico."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Users who trust us to learn",
+    "subtitle": "Our community shares their real experience: a simple way to practice, feel accompanied by AI and see measurable results over time. Nothing explains the product better than the stories of those who use it every day."
+  },
+  "faqs": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How does tlahtolli.ai work?",
+        "answer": "You choose the topics that interest you, the system builds your vocabulary list and you practice in an AI-guided chat. The tutor asks questions, evaluates your answers instantly and gives you clear corrections with examples and audio."
+      },
+      {
+        "question": "Does the free trial include voice?",
+        "answer": "When you create your account you get 5 days free with the text tutor, no card needed. Then, when you choose a plan, you get another 5-day trial with all the plan's features. If you pick Pro or Power, you'll have access to voice mode during that trial."
+      },
+      {
+        "question": "Do I need a credit card to start?",
+        "answer": "No. You create your account and get 5 days free with the text tutor, no card needed. When you choose a plan, a payment method is required, but you'll get a 5-day free trial with all plan features before being charged."
+      },
+      {
+        "question": "Can I choose what to study?",
+        "answer": "Yes. You select your topics (travel, work, food, etc.) and adjust the session. The system generates your list instantly and you can regenerate it whenever you want."
+      },
+      {
+        "question": "What languages are available?",
+        "answer": "Today you can practice English, Portuguese, French, German, Italian and Náhuatl. You can switch languages anytime without losing your progress. More languages coming soon."
+      },
+      {
+        "question": "Can I cancel my subscription?",
+        "answer": "Yes, you can cancel anytime from your account. There's no lock-in or cancellation fees. Your access stays active until the end of the paid period."
+      },
+      {
+        "question": "Where do I see my progress?",
+        "answer": "In the Statistics section: practice streak, success rate, activity calendar and weekly ranking by topics so you can see how you're advancing."
+      },
+      {
+        "question": "Is there a mobile app?",
+        "answer": "For now tlahtolli.ai works on desktop browser. We're working on mobile support."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Start practicing today",
+    "subtitle": "Create your account in seconds and get <strong>5 days free</strong> with the text tutor. No credit card needed. Choose your topics, practice with AI, and when you're ready pick a plan with a 5-day trial included.",
+    "mascotAlt": "Tlahto, the Tlahtolli mascot, waving",
+    "ctaStart": "Start free"
+  },
+  "mobile": {
+    "sectionLabel": "Availability",
+    "title": "Practice from any device",
+    "subtitle": "tlahtolli.ai works right in your phone and computer browser. No need to install anything to start practicing.",
+    "desktopTitle": "Desktop.",
+    "desktopDesc": "Chrome, Firefox, Safari, Edge. Full experience with no downloads or extensions.",
+    "mobileTitle": "Mobile (browser).",
+    "mobileDesc": "Open tlahtolli.ai from your phone's browser. Responsive design that adapts to any screen.",
+    "appTitle": "Native app (in development).",
+    "appDesc": "We're building an app for iOS and Android with the same experience as the browser. Coming soon.",
+    "phoneAlt": "tlahtolli.ai on a phone",
+    "phoneScreenAlt": "tlahtolli.ai in a phone browser"
+  },
+  "footer": {
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "languages": "Languages",
+    "faqs": "FAQs",
+    "copyright": "Copyright © {year} tlahtolli.ai. All rights reserved."
+  }
+}

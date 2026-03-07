@@ -1,152 +1,42 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
-import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
-import clsx from 'clsx'
+import { useTranslations } from 'next-intl'
+import { LuLayoutList, LuMic, LuSparkles, LuGlobe, LuTrendingUp, LuLibrary } from 'react-icons/lu'
 
-import { Container } from '@/components/Container'
-import screenshotChatS1 from '@/images/screenshots/p-assistant-s1.png'
-import screenshotCatalogS1 from '@/images/screenshots/p-catalog-s1.png'
-import screenshotMyLibraryS1 from '@/images/screenshots/p-my-library-s1.png'
-import screenshotStatsS1 from '@/images/screenshots/p-stats-s1.png'
-
-
-
-const features = [
-  {
-    title: 'Practica con el asistente de IA',
-    description:
-      'Chatea con un asistente de Inteligencia Artificial y practica cada expresión en diálogo: la IA te pregunta, evalúa tus respuestas y corrige errores al instante. Además, te muestra ejemplos, traducciones y audio para reforzar el aprendizaje.',
-    image: screenshotChatS1,
-  },
-  {
-    title: 'Elige contenido que sí te interesa',
-    description:
-      'Selecciona los temas que se ajustan a tu vida diaria —comida, viajes, trabajo, conversaciones casuales, etc. Con un clic, la plataforma genera una lista personalizada de vocabulario listo para practicar en el asistente de IA. ¿Cambiaste de objetivo o quieres un tema nuevo? Regenera la selección cuando quieras: todo se ajusta en segundos para mantener tus sesiones frescas y relevantes.',
-    image: screenshotCatalogS1,
-  },
-  {
-    title: 'Mide tu avance y progreso',
-    description:
-      'Consulta tu racha de práctica, aciertos/errores, tasa de éxito y actividad diaria en un panel claro y fácil de entender. El mapa de calor, las tendencias de uso y el ranking semanal por temas te ayudan a visualizar tu evolución y a mantenerte motivado mientras avanzas.',
-    image: screenshotStatsS1,
-  },
-  {
-    title: 'Explora el vocabulario que ya dominas',
-    description:
-      'Revisa todas las palabras y frases que has practicado con indicadores rápidos para medir tu dominio. Ordena y filtra por temas, encuentra lo que necesitas al instante y decide qué reforzar en tu próxima sesión. Toda tu biblioteca está organizada para ayudarte a avanzar de forma inteligente.',
-    image: screenshotMyLibraryS1,
-  },
-]
+const ICONS = [LuLayoutList, LuMic, LuSparkles, LuGlobe, LuTrendingUp, LuLibrary]
 
 export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState<'horizontal' | 'vertical'>(
-    'horizontal',
-  )
-
-  useEffect(() => {
-    let lgMediaQuery = window.matchMedia('(min-width: 1024px)')
-
-    function onMediaQueryChange({ matches }: { matches: boolean }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
-    }
-
-    onMediaQueryChange(lgMediaQuery)
-    lgMediaQuery.addEventListener('change', onMediaQueryChange)
-
-    return () => {
-      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
+  const t = useTranslations('primaryFeatures')
+  const features = t.raw('features') as { name: string; description: string }[]
 
   return (
-    <section
-      id="features"
-      aria-label="Features for running your books"
-      className="relative overflow-hidden bg-gradient-to-r from-tlahtolli-primary via-tlahtolli-accent to-tlahtolli-secondary pt-20 pb-28 sm:py-32"
-    >
-      <Container className="relative">
-        <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            ¿Qué es tlahtolli.ai?
-          </h2>
-          <p className="mt-6 text-xl tracking-tight text-white">
-            Es un asistente de IA diseñado para practicar vocabulario —no un curso tradicional.
-            tlahtolli.ai te ayuda a entrenar distintos idiomas repitiendo, reforzando y dominando expresiones y palabras que realmente usas en la vida diaria.
-            Es muy fácil de usar:
-          </p>
-        </div>
-        <TabGroup
-          className="grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
-          vertical={tabOrientation === 'vertical'}
-        >
-          {({ selectedIndex }) => (
-            <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
-                <TabList className="relative z-10 flex gap-x-4 px-4 whitespace-nowrap sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
-                  {features.map((feature, featureIndex) => (
-                    <div
-                      key={feature.title}
-                      className={clsx(
-                        'group relative rounded-full px-4 py-1 lg:rounded-l-xl lg:rounded-r-xl lg:p-6',
-                        selectedIndex === featureIndex
-                          ? 'bg-white lg:bg-white/20 lg:ring-1 lg:ring-white/10 lg:ring-inset'
-                          : 'hover:bg-white/10 lg:hover:bg-white/5',
-                      )}
-                    >
-                      <h3>
-                        <Tab
-                          className={clsx(
-                            'font-display text-lg data-selected:not-data-focus:outline-hidden cursor-pointer',
-                            selectedIndex === featureIndex
-                              ? 'text-blue-600 lg:text-white'
-                              : 'text-blue-100 hover:text-white lg:text-white',
-                          )}
-                        >
-                          <span className="absolute inset-0 rounded-full lg:rounded-l-xl lg:rounded-r-none" />
-                          {feature.title}
-                        </Tab>
-                      </h3>
-                      <p
-                        className={clsx(
-                          'mt-2 hidden text-sm lg:block',
-                          selectedIndex === featureIndex
-                            ? 'text-white'
-                            : 'text-tlahtolli-cream group-hover:text-white',
-                        )}
-                      >
-                        {feature.description}
-                      </p>
-                    </div>
-                  ))}
-                </TabList>
+    <section id="features" className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+      <div className="mx-auto max-w-2xl lg:text-center">
+        <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-balance">
+          {t('title')}
+        </p>
+        <p className="mt-6 text-lg/8 text-slate-600">
+          {t('subtitle')}
+        </p>
+      </div>
+      <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+          {features.map((feature, i) => {
+            const Icon = ICONS[i]
+            return (
+              <div key={i} className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-slate-900">
+                  <Icon aria-hidden="true" className="size-5 flex-none text-tlahtolli-primary" />
+                  {feature.name}
+                </dt>
+                <dd className="mt-4 flex flex-auto flex-col text-base/7 text-slate-600">
+                  <p className="flex-auto">{feature.description}</p>
+                </dd>
               </div>
-              <TabPanels className="lg:col-span-7">
-                {features.map((feature) => (
-                  <TabPanel key={feature.title} unmount={false}>
-                    <div className="relative sm:px-6 lg:hidden">
-                      <div className="absolute -inset-x-4 -top-26 -bottom-17 bg-white/10 ring-1 ring-white/10 ring-inset sm:inset-x-0 sm:rounded-t-xl" />
-                      <p className="relative mx-auto max-w-2xl text-base text-white sm:text-center">
-                        {feature.description}
-                      </p>
-                    </div>
-                    <div className="mt-10 w-80 overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-271.25">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
-                    </div>
-                  </TabPanel>
-                ))}
-              </TabPanels>
-            </>
-          )}
-        </TabGroup>
-      </Container>
+            )
+          })}
+        </dl>
+      </div>
     </section>
   )
 }

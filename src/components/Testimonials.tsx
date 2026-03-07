@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 import { Container } from '@/components/Container'
 import avatarImage1 from '@/images/avatars/avatar-1.png'
@@ -16,7 +19,7 @@ const testimonials = [
   [
     {
       content:
-        'Empecé con 100k tokens, elegí temas de viajes y trabajo y en una tarde ya estaba practicando. El chat corrige sin juzgar y las expresiones vuelven justo cuando toca repasar.',
+        'Elegí temas de viajes y trabajo y en una tarde ya estaba practicando. El chat corrige sin juzgar y las expresiones vuelven justo cuando toca repasar.',
       author: {
         name: 'Mariana López',
         role: 'Estudiante de Ingeniería',
@@ -54,7 +57,7 @@ const testimonials = [
     },
     {
       content:
-        'Me gustó que pagas solo lo que usas. Cuando necesito más, recargo tokens y ya. Sin planes raros ni suscripciones obligatorias.',
+        'Me gustó que los 5 días gratis me dieron suficiente tiempo para decidir. Ahora con el plan Pro puedo practicar por voz y texto sin complicaciones.',
       author: {
         name: 'Fernanda Torres',
         role: 'Emprendedora',
@@ -63,7 +66,7 @@ const testimonials = [
     },
     {
       content:
-        'Como mamá con poco tiempo, me funciona recargar tokens cuando puedo y hacer sesiones cortas. Ver mi racha me motiva a no romper el hábito.',
+        'Como mamá con poco tiempo, me funcionan las sesiones cortas de 10 minutos. Ver mi racha me motiva a no romper el hábito.',
       author: {
         name: 'Laura Martínez',
         role: 'Diseñadora · Puebla',
@@ -111,20 +114,20 @@ function QuoteIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function Testimonials() {
+  const t = useTranslations('testimonials')
   return (
     <section
       id="testimonials"
       aria-label="What our customers are saying"
-      className="bg-tlahtolli-light py-20 sm:py-32"
+      className="mt-32 bg-tlahtolli-light py-20 sm:mt-40 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Usuarios que confían en nosotros para aprender
+            {t('title')}
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Nuestra comunidad comparte su experiencia real: una forma simple de practicar, sentirse acompañado por la AI y ver resultados medibles con el tiempo.
-            Nada explica mejor el producto que las historias de quienes lo usan cada día.
+            {t('subtitle')}
           </p>
         </div>
         <ul

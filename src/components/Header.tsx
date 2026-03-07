@@ -8,9 +8,11 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import clsx from 'clsx'
+import { useTranslations } from 'next-intl'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 import { track } from '@/lib/ga'
@@ -59,6 +61,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
 }
 
 function MobileNavigation() {
+  const t = useTranslations('header')
   return (
     <Popover>
       <PopoverButton
@@ -88,22 +91,7 @@ function MobileNavigation() {
             })
           }
         >
-          ¿Cómo funciona?
-        </MobileNavLink>
-        <MobileNavLink
-          href="#languages"
-          onClick={() =>
-            track('select_content', {
-              content_type: 'nav',
-              item_id: 'languages',
-              location: 'header',
-              destination: 'web',
-              url: 'https://www.tlahtolli.ai/#get-started-today',
-              site: 'landing',
-            })
-          }
-        >
-          Idiomas
+          {t('howItWorks')}
         </MobileNavLink>
         <MobileNavLink
           href="#pricing"
@@ -118,11 +106,26 @@ function MobileNavigation() {
             })
           }
         >
-          Precios
+          {t('pricing')}
+        </MobileNavLink>
+        <MobileNavLink
+          href="#languages"
+          onClick={() =>
+            track('select_content', {
+              content_type: 'nav',
+              item_id: 'languages',
+              location: 'header',
+              destination: 'web',
+              url: 'https://www.tlahtolli.ai/#languages',
+              site: 'landing',
+            })
+          }
+        >
+          {t('languages')}
         </MobileNavLink>
         <hr className="m-2 border-slate-300/40" />
         <MobileNavLink
-          href="/login"
+          href="https://auth.tlahtolli.ai/users/sign_in"
           onClick={() =>
             track('select_content', {
               content_type: 'auth',
@@ -134,7 +137,22 @@ function MobileNavigation() {
             })
           }
         >
-          Iniciar sesión
+          {t('signIn')}
+        </MobileNavLink>
+        <MobileNavLink
+          href="https://auth.tlahtolli.ai/users/sign_up"
+          onClick={() =>
+            track('generate_lead', {
+              cta: 'mobile_menu_signup',
+              item_id: 'signup',
+              location: 'header',
+              destination: 'app',
+              url: 'https://auth.tlahtolli.ai/users/sign_up',
+              site: 'landing',
+            })
+          }
+        >
+          {t('signUp')}
         </MobileNavLink>
       </PopoverPanel>
     </Popover>
@@ -142,6 +160,7 @@ function MobileNavigation() {
 }
 
 export function Header() {
+  const t = useTranslations('header')
   return (
     <header className="pt-10 pb-8">
       <Container>
@@ -164,22 +183,7 @@ export function Header() {
                   })
                 }
               >
-                ¿Cómo funciona?
-              </NavLink>
-              <NavLink
-                href="#languages"
-                onClick={() =>
-                  track('select_content', {
-                    content_type: 'nav',
-                    item_id: 'languages',
-                    location: 'header',
-                    destination: 'web',
-                    url: 'https://www.tlahtolli.ai/#languages',
-                    site: 'landing',
-                  })
-                }
-              >
-                Idiomas
+                {t('howItWorks')}
               </NavLink>
               <NavLink
                 href="#pricing"
@@ -194,7 +198,22 @@ export function Header() {
                   })
                 }
               >
-                Precios
+                {t('pricing')}
+              </NavLink>
+              <NavLink
+                href="#languages"
+                onClick={() =>
+                  track('select_content', {
+                    content_type: 'nav',
+                    item_id: 'languages',
+                    location: 'header',
+                    destination: 'web',
+                    url: 'https://www.tlahtolli.ai/#languages',
+                    site: 'landing',
+                  })
+                }
+              >
+                {t('languages')}
               </NavLink>
             </div>
           </div>
@@ -213,27 +232,30 @@ export function Header() {
                   })
                 }
               >
-                Iniciar Sesión
+                {t('signIn')}
               </NavLink>
             </div>
-            <Button
-              href="https://auth.tlahtolli.ai/users/sign_up"
-              color="tlahtolli"
-              ga={{
-                event: 'generate_lead',
-                params: {
-                  cta: 'header_signup',
-                  item_id: 'signup',
-                  location: 'header',
-                  destination: 'app',
-                  url: 'https://auth.tlahtolli.ai/users/sign_up',
-                  site: 'landing',
-                },
-                once: true,
-              }}
-            >
-              <span>Regístrate</span>
-            </Button>
+            <div className="hidden md:block">
+              <Button
+                href="https://auth.tlahtolli.ai/users/sign_up"
+                color="tlahtolli"
+                ga={{
+                  event: 'generate_lead',
+                  params: {
+                    cta: 'header_signup',
+                    item_id: 'signup',
+                    location: 'header',
+                    destination: 'app',
+                    url: 'https://auth.tlahtolli.ai/users/sign_up',
+                    site: 'landing',
+                  },
+                  once: true,
+                }}
+              >
+                <span>{t('signUp')}</span>
+              </Button>
+            </div>
+            <LanguageSwitcher />
             <div className="-mr-1 md:hidden">
               <MobileNavigation />
             </div>

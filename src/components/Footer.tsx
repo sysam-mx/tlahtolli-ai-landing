@@ -1,6 +1,8 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
@@ -8,14 +10,20 @@ import { NavLink } from '@/components/NavLink'
 import { LuYoutube, LuInstagram, LuFacebook } from "react-icons/lu"
 import { track } from '@/lib/ga'
 
+import ajoloteSvg from '@/images/tlahto-v1.svg'
+
 export function Footer() {
+  const t = useTranslations('footer')
   return (
     <footer className="bg-tlahtolli-light">
       <Container>
         <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
+          <div className="flex items-center justify-between">
+            <Logo className="h-10 w-auto" />
+            <Image src={ajoloteSvg} alt="Tlahtolli mascot" className="h-12 w-auto" />
+          </div>
           <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
+            <div className="-my-1 flex flex-wrap justify-center gap-x-6 gap-y-2">
               <NavLink
                 href="#features"
                 onClick={() =>
@@ -29,22 +37,7 @@ export function Footer() {
                   })
                 }
               >
-                ¿Cómo funciona?
-              </NavLink>
-              <NavLink
-                href="#testimonials"
-                onClick={() =>
-                  track('select_content', {
-                    content_type: 'nav',
-                    item_id: 'testimonials',
-                    location: 'footer',
-                    destination: 'web',
-                    url: 'https://www.tlahtolli.ai/#testimonials',
-                    site: 'landing',
-                  })
-                }
-              >
-                Testimonios
+                {t('howItWorks')}
               </NavLink>
               <NavLink
                 href="#pricing"
@@ -59,7 +52,37 @@ export function Footer() {
                   })
                 }
               >
-                Precios
+                {t('pricing')}
+              </NavLink>
+              <NavLink
+                href="#languages"
+                onClick={() =>
+                  track('select_content', {
+                    content_type: 'nav',
+                    item_id: 'languages',
+                    location: 'footer',
+                    destination: 'web',
+                    url: 'https://www.tlahtolli.ai/#languages',
+                    site: 'landing',
+                  })
+                }
+              >
+                {t('languages')}
+              </NavLink>
+              <NavLink
+                href="#faq"
+                onClick={() =>
+                  track('select_content', {
+                    content_type: 'nav',
+                    item_id: 'faq',
+                    location: 'footer',
+                    destination: 'web',
+                    url: 'https://www.tlahtolli.ai/#faq',
+                    site: 'landing',
+                  })
+                }
+              >
+                {t('faqs')}
               </NavLink>
             </div>
           </nav>
@@ -127,8 +150,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} tlahtolli.ai. All rights
-            reserved.
+            {t('copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
       </Container>

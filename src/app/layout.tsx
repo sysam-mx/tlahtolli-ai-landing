@@ -1,11 +1,14 @@
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages } from 'next-intl/server'
 
 import '@/styles/tailwind.css'
 import GoogleAnalytics from './GoogleAnalytics'
 import GA4PageView from './GA4PageView'
 import { Suspense } from 'react'
+import { RegionProvider } from '@/context/RegionContext'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.tlahtolli.ai'),
@@ -87,16 +90,18 @@ const lexend = Lexend({
   variable: '--font-lexend',
 })
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   const ga = process.env.NEXT_PUBLIC_GA_ID
+  const locale = await getLocale()
+  const messages = await getMessages()
 
   return (
     <html
-      lang="en"
+      lang={locale}
       className={clsx(
         'h-full scroll-smooth bg-white antialiased',
         inter.variable,
@@ -104,7 +109,11 @@ export default function RootLayout({
       )}
     >
       <body className="flex h-full flex-col">
-        {children}
+        <NextIntlClientProvider messages={messages}>
+          <RegionProvider>
+            {children}
+          </RegionProvider>
+        </NextIntlClientProvider>
         {ga && process.env.NODE_ENV === 'production' && (
           <GoogleAnalytics measurementId={ga} />
         )}

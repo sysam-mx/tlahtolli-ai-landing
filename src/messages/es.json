@@ -1,0 +1,170 @@
+{
+  "header": {
+    "howItWorks": "¿Cómo funciona?",
+    "languages": "Idiomas",
+    "pricing": "Precios",
+    "signIn": "Iniciar Sesión",
+    "signUp": "Regístrate"
+  },
+  "hero": {
+    "languages": ["Inglés 🇺🇸", "Francés 🇫🇷", "Alemán 🇩🇪", "Italiano 🇮🇹", "Portugués 🇧🇷", "Náhuatl 🏵️"],
+    "titleStart": "Aprende vocabulario en",
+    "titleEnd": "con un tutor de IA",
+    "subtitle": "Practica por texto o por voz con un tutor que te corrige al instante. Elige tus temas, refuerza con repetición y mide tu avance real.",
+    "freeTrialBold": "5 días gratis",
+    "freeTrialSuffix": "con el tutor por texto. Sin tarjeta de crédito.",
+    "ctaStart": "Empieza gratis",
+    "ctaVideo": "Ver video",
+    "screenshotAlt": "Tutor AI de tlahtolli.ai practicando vocabulario"
+  },
+  "problem": {
+    "title": "Aprender vocabulario en otro idioma es difícil",
+    "subtitle": "No importa cuántas apps descargues o cuántas listas guardes. Sin práctica real y sin retroalimentación, el vocabulario no se queda.",
+    "points": [
+      { "title": "Demasiadas palabras", "description": "Hay miles de palabras y no sabes por dónde empezar ni cuáles realmente necesitas." },
+      { "title": "Se olvidan rápido", "description": "Memorizas listas pero las olvidas en días porque no las practicas en contexto." },
+      { "title": "Sin progreso visible", "description": "Estudias sin saber si realmente estás avanzando o solo repitiendo lo mismo." },
+      { "title": "Sin guía constante", "description": "Es difícil mantener la constancia sin alguien que te corrija y te motive." }
+    ]
+  },
+  "solution": {
+    "title": "Conoce a tu tutor de IA",
+    "subtitle": "No es un curso ni una app de ejercicios sueltos. Es una conversación inteligente que te guía, te corrige y refuerza lo que más necesitas practicar.",
+    "screenshotAlt": "Tutor de IA de tlahtolli.ai en acción",
+    "highlights": [
+      { "name": "Practica escribiendo", "description": "Traduce palabras y frases escribiendo. El tutor te corrige al instante con feedback claro y ejemplos." },
+      { "name": "Practica con tu voz", "description": "Habla con el tutor para practicar pronunciación y fluidez. Escucha, repite y mejora en cada sesión." },
+      { "name": "Repetición espaciada", "description": "Las palabras que fallas vuelven a aparecer en el momento justo para que las memorices a largo plazo." }
+    ]
+  },
+  "howItWorks": {
+    "title": "Empieza a practicar en minutos",
+    "subtitle": "Sin configuraciones complicadas. Cuatro pasos y ya estás aprendiendo.",
+    "steps": [
+      { "name": "Elige tu idioma", "description": "Inglés, portugués, francés, alemán, italiano y náhuatl disponibles hoy. Cambia de idioma cuando quieras sin perder tu progreso." },
+      { "name": "Selecciona tus temas", "description": "Comida, viajes, trabajo, conversaciones casuales y más. Elige los temas que se ajustan a tu vida diaria y genera tu lista de vocabulario." },
+      { "name": "Practica con el tutor", "description": "Por texto o por voz, el tutor te hace preguntas, evalúa tus respuestas al instante y te da correcciones claras con ejemplos y audio." },
+      { "name": "Mide tu avance", "description": "Consulta tu racha, aciertos, errores, calendario de actividad y ranking semanal. Todo lo que necesitas para ver tu progreso real." }
+    ]
+  },
+  "primaryFeatures": {
+    "title": "Todo lo que necesitas para aprender vocabulario",
+    "subtitle": "Una plataforma completa que combina inteligencia artificial, personalización y métricas para que tu práctica sea efectiva desde el primer día.",
+    "features": [
+      { "name": "Selección por temas", "description": "Elige vocabulario relevante para tu vida: comida, viajes, trabajo, conversaciones casuales y más." },
+      { "name": "Texto y voz", "description": "Practica escribiendo o hablando con el tutor. Tú decides cómo quieres entrenar en cada sesión." },
+      { "name": "Repetición inteligente", "description": "Las palabras que fallas vuelven a aparecer en el momento justo. Así memorizas a largo plazo sin estudiar de más." },
+      { "name": "Multi-idioma", "description": "Inglés, portugués, francés, alemán, italiano y la lengua originaria náhuatl. Más idiomas próximamente." },
+      { "name": "Estadísticas reales", "description": "Racha de práctica, aciertos, errores, calendario de actividad y ranking semanal por temas." },
+      { "name": "Tu vocabulario organizado", "description": "Todas las palabras que has practicado, con indicadores de dominio. Filtra, ordena y decide qué reforzar." }
+    ]
+  },
+  "secondaryFeatures": {
+    "title": "Así se ve una sesión de práctica",
+    "subtitle": "El tutor te guía paso a paso: pregunta, escucha tu respuesta, evalúa y te da feedback con ejemplos y audio. Todo en una conversación natural.",
+    "screenshotAlt": "Sesión de práctica con el tutor AI de tlahtolli.ai",
+    "subFeatures": [
+      { "name": "Preguntas guiadas", "description": "El tutor te hace preguntas sobre cada expresión y espera tu respuesta." },
+      { "name": "Modo voz", "description": "Habla con el tutor usando tu micrófono. Practica pronunciación en tiempo real." },
+      { "name": "Correcciones con IA", "description": "Cada respuesta recibe evaluación instantánea con feedback claro y ejemplos." },
+      { "name": "Audio integrado", "description": "Escucha la pronunciación correcta de cada ejemplo para entrenar tu oído." },
+      { "name": "Aciertos y errores", "description": "El tutor registra cada respuesta para que veas tu tasa de éxito y sepas qué reforzar." },
+      { "name": "Repetición inteligente", "description": "Las palabras que fallas vuelven a aparecer hasta que las domines." }
+    ]
+  },
+  "personalization": {
+    "title": "Personaliza tu experiencia",
+    "subtitle": "Ajusta el idioma, la voz y el audio del tutor para que cada sesión se sienta como tuya.",
+    "cards": [
+      { "name": "Selecciona tu idioma", "description": "Inglés, portugués, francés, alemán, italiano y náhuatl disponibles hoy. Cambia de idioma en cualquier momento sin perder tu progreso. Más idiomas próximamente." },
+      { "name": "Elige la voz del tutor", "description": "Cada voz tiene personalidad y estilo diferente. Elige entre 8 opciones y cambia cuando quieras desde la configuración." },
+      { "name": "Audio del chat", "description": "Activa la lectura automática de los ejemplos del tutor para entrenar tu oído mientras practicas por texto." }
+    ]
+  },
+  "pricing": {
+    "title": "Elige el plan que se ajuste a ti",
+    "trialNote": "Todos los planes incluyen <strong>5 días de prueba gratis</strong> con todas sus funciones. Se requiere método de pago al elegir tu plan.",
+    "mostPopular": "Más popular",
+    "perMonth": "/mes",
+    "ctaStart": "Empieza gratis",
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "description": "Empieza con lo esencial para practicar y aprender.",
+        "features": ["Tutor AI por texto", "Repetición inteligente", "Estadísticas de progreso", "Vocabulario y exploración"]
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Más potencia para avanzar más rápido y con más control.",
+        "features": ["Todo lo de Starter", "Modo voz interactivo", "Mayor capacidad de uso", "Soporte prioritario"]
+      },
+      "power": {
+        "name": "Power",
+        "description": "La experiencia completa para uso intensivo.",
+        "features": ["Todo lo de Pro", "Máxima capacidad de uso", "Soporte dedicado"]
+      }
+    }
+  },
+  "languages": {
+    "sectionLabel": "Idiomas y lenguas",
+    "title": "Practica en el idioma que necesitas",
+    "subtitle": "5 idiomas y una lengua originaria disponibles hoy. Cambia entre ellos en cualquier momento sin perder tu progreso.",
+    "idiomasLabel": "Idiomas",
+    "lenguasLabel": "Lenguas originarias",
+    "available": "Disponible",
+    "comingSoon": "Próximamente",
+    "idiomas": [
+      { "name": "Inglés", "flag": "🇺🇸", "description": "El idioma más demandado a nivel global." },
+      { "name": "Portugués", "flag": "🇧🇷", "description": "Conecta con más de 250 millones de hablantes." },
+      { "name": "Francés", "flag": "🇫🇷", "description": "Presente en 5 continentes y en diplomacia." },
+      { "name": "Alemán", "flag": "🇩🇪", "description": "La economía más grande de Europa." },
+      { "name": "Italiano", "flag": "🇮🇹", "description": "Arte, gastronomía y cultura milenaria." }
+    ],
+    "lenguas": [
+      { "name": "Náhuatl", "flag": "🏵️", "description": "La lengua originaria más hablada en México." }
+    ]
+  },
+  "testimonials": {
+    "title": "Usuarios que confían en nosotros para aprender",
+    "subtitle": "Nuestra comunidad comparte su experiencia real: una forma simple de practicar, sentirse acompañado por la AI y ver resultados medibles con el tiempo. Nada explica mejor el producto que las historias de quienes lo usan cada día."
+  },
+  "faqs": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Cómo funciona tlahtolli.ai?", "answer": "Eliges los temas que te interesan, el sistema arma tu lista de vocabulario y practicas en un chat guiado por IA. El tutor te pregunta, evalúa tus respuestas al instante y te da correcciones claras con ejemplos y audio." },
+      { "question": "¿La prueba gratuita incluye voz?", "answer": "Al crear tu cuenta obtienes 5 días gratis con el tutor por texto, sin tarjeta. Después, al elegir un plan, tienes otros 5 días de prueba con todas las funciones del plan. Si eliges Pro o Power, tendrás acceso al modo voz durante esa prueba." },
+      { "question": "¿Necesito tarjeta de crédito para empezar?", "answer": "No. Creas tu cuenta y obtienes 5 días gratis con el tutor por texto sin tarjeta. Cuando decidas elegir un plan, se requiere método de pago, pero tendrás 5 días de prueba gratis con todas las funciones del plan antes de que se realice el cobro." },
+      { "question": "¿Puedo elegir qué estudiar?", "answer": "Sí. Seleccionas tus temas (viajes, trabajo, comida, etc.) y ajustas la sesión. El sistema genera tu lista al instante y puedes regenerarla cuando quieras." },
+      { "question": "¿Qué idiomas están disponibles?", "answer": "Hoy puedes practicar inglés, portugués, francés, alemán, italiano y náhuatl. Puedes cambiar de idioma en cualquier momento sin perder tu progreso. Más idiomas próximamente." },
+      { "question": "¿Puedo cancelar mi suscripción?", "answer": "Sí, puedes cancelar en cualquier momento desde tu cuenta. No hay permanencia ni cargos por cancelación. Tu acceso sigue activo hasta el final del periodo pagado." },
+      { "question": "¿Dónde veo mi progreso?", "answer": "En la sección de Estadísticas: racha de práctica, tasa de aciertos, calendario de actividad y ranking semanal por temas para que veas cómo avanzas." },
+      { "question": "¿Hay app móvil?", "answer": "Por ahora tlahtolli.ai funciona en navegador de escritorio. Estamos trabajando en soporte para móviles." }
+    ]
+  },
+  "cta": {
+    "title": "Empieza a practicar hoy mismo",
+    "subtitle": "Crea tu cuenta en segundos y obtén <strong>5 días gratis</strong> con el tutor por texto. Sin tarjeta de crédito. Elige tus temas, practica con IA y cuando estés listo elige un plan con 5 días de prueba incluidos.",
+    "mascotAlt": "Tlahto, la mascota de Tlahtolli, saludando",
+    "ctaStart": "Empieza gratis"
+  },
+  "mobile": {
+    "sectionLabel": "Disponibilidad",
+    "title": "Practica desde cualquier dispositivo",
+    "subtitle": "tlahtolli.ai funciona directo en el navegador de tu celular y de tu computadora. No necesitas instalar nada para empezar a practicar.",
+    "desktopTitle": "Escritorio.",
+    "desktopDesc": "Chrome, Firefox, Safari, Edge. Experiencia completa sin descargas ni extensiones.",
+    "mobileTitle": "Celular (navegador).",
+    "mobileDesc": "Abre tlahtolli.ai desde el navegador de tu celular. Diseño responsive que se ajusta a cualquier pantalla.",
+    "appTitle": "App nativa (en desarrollo).",
+    "appDesc": "Estamos trabajando en una app para iOS y Android con la misma experiencia que en el navegador. Próximamente.",
+    "phoneAlt": "tlahtolli.ai en un celular",
+    "phoneScreenAlt": "tlahtolli.ai en el navegador de un celular"
+  },
+  "footer": {
+    "howItWorks": "¿Cómo funciona?",
+    "pricing": "Precios",
+    "languages": "Idiomas",
+    "faqs": "Preguntas frecuentes",
+    "copyright": "Copyright © {year} tlahtolli.ai. All rights reserved."
+  }
+}
