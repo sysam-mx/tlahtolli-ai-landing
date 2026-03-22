@@ -16,7 +16,7 @@ export function SecondaryFeatures() {
     const video = videoRef.current
     if (!video) return
 
-    video.playbackRate = 2.0
+    video.playbackRate = 1.8
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -65,7 +65,7 @@ export function SecondaryFeatures() {
             className="mb-[-12%] w-full rounded-xl shadow-2xl ring-1 ring-slate-900/10 cursor-pointer"
             onClick={handleVideoClick}
           >
-            <source src="/videos/how-it-works.mp4" type="video/mp4" />
+            <source src="/videos/how-it-works-v2.mp4" type="video/mp4" />
           </video>
           <div aria-hidden="true" className="relative">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />

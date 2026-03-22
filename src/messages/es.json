@@ -7,7 +7,13 @@
     "signUp": "Regístrate"
   },
   "hero": {
-    "languages": ["Inglés 🇺🇸", "Francés 🇫🇷", "Alemán 🇩🇪", "Italiano 🇮🇹", "Portugués 🇧🇷", "Náhuatl 🏵️"],
+    "languages": [
+      "Inglés 🇺🇸",
+      "Francés 🇫🇷",
+      "Alemán 🇩🇪",
+      "Italiano 🇮🇹",
+      "Portugués 🇧🇷"
+    ],
     "titleStart": "Aprende vocabulario en",
     "titleEnd": "con un tutor de IA",
     "subtitle": "Practica por texto o por voz con un tutor que te corrige al instante. Elige tus temas, refuerza con repetición y mide tu avance real.",
@@ -41,7 +47,7 @@
     "title": "Empieza a practicar en minutos",
     "subtitle": "Sin configuraciones complicadas. Cuatro pasos y ya estás aprendiendo.",
     "steps": [
-      { "name": "Elige tu idioma", "description": "Inglés, portugués, francés, alemán, italiano y náhuatl disponibles hoy. Cambia de idioma cuando quieras sin perder tu progreso." },
+      { "name": "Elige tu idioma", "description": "Inglés, portugués, francés, alemán y italiano disponibles hoy. Cambia de idioma cuando quieras sin perder tu progreso." },
       { "name": "Selecciona tus temas", "description": "Comida, viajes, trabajo, conversaciones casuales y más. Elige los temas que se ajustan a tu vida diaria y genera tu lista de vocabulario." },
       { "name": "Practica con el tutor", "description": "Por texto o por voz, el tutor te hace preguntas, evalúa tus respuestas al instante y te da correcciones claras con ejemplos y audio." },
       { "name": "Mide tu avance", "description": "Consulta tu racha, aciertos, errores, calendario de actividad y ranking semanal. Todo lo que necesitas para ver tu progreso real." }
@@ -54,7 +60,7 @@
       { "name": "Selección por temas", "description": "Elige vocabulario relevante para tu vida: comida, viajes, trabajo, conversaciones casuales y más." },
       { "name": "Texto y voz", "description": "Practica escribiendo o hablando con el tutor. Tú decides cómo quieres entrenar en cada sesión." },
       { "name": "Repetición inteligente", "description": "Las palabras que fallas vuelven a aparecer en el momento justo. Así memorizas a largo plazo sin estudiar de más." },
-      { "name": "Multi-idioma", "description": "Inglés, portugués, francés, alemán, italiano y la lengua originaria náhuatl. Más idiomas próximamente." },
+      { "name": "Multi-idioma", "description": "Inglés, portugués, francés, alemán y italiano. Más idiomas próximamente." },
       { "name": "Estadísticas reales", "description": "Racha de práctica, aciertos, errores, calendario de actividad y ranking semanal por temas." },
       { "name": "Tu vocabulario organizado", "description": "Todas las palabras que has practicado, con indicadores de dominio. Filtra, ordena y decide qué reforzar." }
     ]
@@ -76,7 +82,7 @@
     "title": "Personaliza tu experiencia",
     "subtitle": "Ajusta el idioma, la voz y el audio del tutor para que cada sesión se sienta como tuya.",
     "cards": [
-      { "name": "Selecciona tu idioma", "description": "Inglés, portugués, francés, alemán, italiano y náhuatl disponibles hoy. Cambia de idioma en cualquier momento sin perder tu progreso. Más idiomas próximamente." },
+      { "name": "Selecciona tu idioma", "description": "Inglés, portugués, francés, alemán y italiano disponibles hoy. Cambia de idioma en cualquier momento sin perder tu progreso. Más idiomas próximamente." },
       { "name": "Elige la voz del tutor", "description": "Cada voz tiene personalidad y estilo diferente. Elige entre 8 opciones y cambia cuando quieras desde la configuración." },
       { "name": "Audio del chat", "description": "Activa la lectura automática de los ejemplos del tutor para entrenar tu oído mientras practicas por texto." }
     ]

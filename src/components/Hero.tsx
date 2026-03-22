@@ -109,8 +109,9 @@ export function Hero() {
                 {t('ctaStart')}
               </Button>
               <Button
-                href="https://www.youtube.com/@tlahtolli-ai"
+                href="https://www.youtube.com/watch?v=33A839PIkGk"
                 color="tlahtolliSoft"
+                target="_blank"
                 ga={{
                   event: 'cta_click',
                   once: true,
@@ -118,7 +119,7 @@ export function Hero() {
                     section: 'hero',
                     cta_id: 'hero_ver_video',
                     destination: 'youtube',
-                    url: 'https://www.youtube.com/@tlahtolli-ai',
+                    url: 'https://www.youtube.com/watch?v=33A839PIkGk',
                     page: 'landing_home'
                   }
                 }}

@@ -12,8 +12,7 @@
       "French 🇫🇷",
       "German 🇩🇪",
       "Italian 🇮🇹",
-      "Portuguese 🇧🇷",
-      "Náhuatl 🏵️"
+      "Portuguese 🇧🇷"
     ],
     "titleStart": "Learn vocabulary in",
     "titleEnd": "with an AI tutor",
@@ -71,7 +70,7 @@
     "steps": [
       {
         "name": "Choose your language",
-        "description": "English, Portuguese, French, German, Italian and Náhuatl available today. Switch languages anytime without losing your progress."
+        "description": "English, Portuguese, French, German and Italian available today. Switch languages anytime without losing your progress."
       },
       {
         "name": "Select your topics",
@@ -105,7 +104,7 @@
       },
       {
         "name": "Multi-language",
-        "description": "English, Portuguese, French, German, Italian and the indigenous language Náhuatl. More languages coming soon."
+        "description": "English, Portuguese, French, German and Italian. More languages coming soon."
       },
       {
         "name": "Real statistics",
@@ -154,7 +153,7 @@
     "cards": [
       {
         "name": "Select your language",
-        "description": "English, Portuguese, French, German, Italian and Náhuatl available today. Switch languages anytime without losing your progress. More languages coming soon."
+        "description": "English, Portuguese, French, German and Italian available today. Switch languages anytime without losing your progress. More languages coming soon."
       },
       {
         "name": "Choose the tutor voice",
