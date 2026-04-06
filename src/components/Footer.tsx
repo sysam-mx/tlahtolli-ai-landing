@@ -7,7 +7,8 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
-import { LuYoutube, LuInstagram, LuFacebook } from "react-icons/lu"
+import { LuYoutube, LuInstagram, LuFacebook, LuLinkedin } from "react-icons/lu"
+import { PiTiktokLogo } from "react-icons/pi"
 import { track } from '@/lib/ga'
 
 import ajoloteSvg from '@/images/tlahto-v1.svg'
@@ -147,6 +148,46 @@ export function Footer() {
               }
             >
               <LuFacebook className="h-6 w-6 text-slate-500 group-hover:text-slate-700" strokeWidth={1.8} />
+            </Link>
+
+            <Link
+              href="https://www.tiktok.com/@tlahtolliai"
+              aria-label="Tlahtolli AI on Linkedin"
+              className="group inline-flex rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                track('select_content', {
+                  content_type: 'social',
+                  item_id: 'TikTok',
+                  location: 'footer',
+                  destination: 'web',
+                  url: 'https://www.tiktok.com/@tlahtolliai',
+                  site: 'landing',
+                })
+              }
+            >
+              <PiTiktokLogo className="h-6 w-6 text-slate-500 group-hover:text-slate-700" strokeWidth={1.8} />
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/company/tlahtolli-ai"
+              aria-label="Tlahtolli AI on Linkedin"
+              className="group inline-flex rounded focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                track('select_content', {
+                  content_type: 'social',
+                  item_id: 'Linkedin',
+                  location: 'footer',
+                  destination: 'web',
+                  url: 'https://www.linkedin.com/company/tlahtolli-ai',
+                  site: 'landing',
+                })
+              }
+            >
+              <LuLinkedin className="h-6 w-6 text-slate-500 group-hover:text-slate-700" strokeWidth={1.8} />
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
