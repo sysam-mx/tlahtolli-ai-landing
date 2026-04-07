@@ -6,6 +6,7 @@ import { getLocale, getMessages } from 'next-intl/server'
 
 import '@/styles/tailwind.css'
 import GoogleAnalytics from './GoogleAnalytics'
+import MetaPixel from './MetaPixel'
 import GA4PageView from './GA4PageView'
 import { Suspense } from 'react'
 import { RegionProvider } from '@/context/RegionContext'
@@ -96,6 +97,7 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   const ga = process.env.NEXT_PUBLIC_GA_ID
+  const fbPixel = process.env.NEXT_PUBLIC_META_PIXEL_ID
   const locale = await getLocale()
   const messages = await getMessages()
 
@@ -116,6 +118,9 @@ export default async function RootLayout({
         </NextIntlClientProvider>
         {ga && process.env.NODE_ENV === 'production' && (
           <GoogleAnalytics measurementId={ga} />
+        )}
+        {fbPixel && process.env.NODE_ENV === 'production' && (
+          <MetaPixel pixelId={fbPixel} />
         )}
         <Suspense fallback={null}>
           {ga && <GA4PageView />}
