@@ -14,23 +14,22 @@
       "Italiano 🇮🇹",
       "Portugués 🇧🇷"
     ],
-    "titleStart": "Aprende vocabulario en",
+    "titleStart": "Práctica vocabulario en",
     "titleEnd": "con un tutor de IA",
-    "subtitle": "Practica por texto o por voz con un tutor que te corrige al instante. Elige tus temas, refuerza con repetición y mide tu avance real.",
-    "freeTrialBold": "5 días gratis",
-    "freeTrialSuffix": "con el tutor por texto. Sin tarjeta de crédito.",
-    "ctaStart": "Empieza gratis",
-    "ctaVideo": "Ver video",
+    "subtitle": "Elige un tema → practica por texto o por voz → recibe correcciones y mejora en minutos.",
+    "ctaStart": "Probar gratis ahora",
+    "ctaVideo": "Ver cómo funciona",
     "screenshotAlt": "Tutor AI de tlahtolli.ai practicando vocabulario"
   },
   "problem": {
-    "title": "Aprender vocabulario en otro idioma es difícil",
-    "subtitle": "No importa cuántas apps descargues o cuántas listas guardes. Sin práctica real y sin retroalimentación, el vocabulario no se queda.",
+    "title": "Aprender vocabulario no tiene por qué ser tan complicado",
+    "subtitle": "Puedes estudiar horas, pero sin práctica real el vocabulario se olvida.",
+    "cardsLabel": "¿Te pasa esto?",
     "points": [
-      { "title": "Demasiadas palabras", "description": "Hay miles de palabras y no sabes por dónde empezar ni cuáles realmente necesitas." },
-      { "title": "Se olvidan rápido", "description": "Memorizas listas pero las olvidas en días porque no las practicas en contexto." },
-      { "title": "Sin progreso visible", "description": "Estudias sin saber si realmente estás avanzando o solo repitiendo lo mismo." },
-      { "title": "Sin guía constante", "description": "Es difícil mantener la constancia sin alguien que te corrija y te motive." }
+      { "title": "Se olvida rápido", "description": "Memorizas el vocabulario pero se te olvida en días" },
+      { "title": "Demasiadas palabras", "description": "Observas miles de palabras y no sabes por dónde empezar" },
+      { "title": "Sin progreso visible", "description": "No sabes si realmente estás avanzando o solo repitiendo lo mismo" },
+      { "title": "Sin guía", "description": "Nadie te corrige mientras practicas" }
     ]
   },
   "solution": {
@@ -89,7 +88,7 @@
   },
   "pricing": {
     "title": "Elige el plan que se ajuste a ti",
-    "trialNote": "Todos los planes incluyen <strong>5 días de prueba gratis</strong> con todas sus funciones. Se requiere método de pago al elegir tu plan.",
+    "trialNote": "Al crear tu cuenta obtienes <strong>15 días gratis</strong> con el tutor por texto. Después, cada plan incluye <strong>5 días de prueba adicionales</strong> con todas sus funciones.",
     "mostPopular": "Más popular",
     "perMonth": "/mes",
     "ctaStart": "Empieza gratis",
@@ -138,8 +137,8 @@
     "title": "Preguntas frecuentes",
     "items": [
       { "question": "¿Cómo funciona tlahtolli.ai?", "answer": "Eliges los temas que te interesan, el sistema arma tu lista de vocabulario y practicas en un chat guiado por IA. El tutor te pregunta, evalúa tus respuestas al instante y te da correcciones claras con ejemplos y audio." },
-      { "question": "¿La prueba gratuita incluye voz?", "answer": "Al crear tu cuenta obtienes 5 días gratis con el tutor por texto, sin tarjeta. Después, al elegir un plan, tienes otros 5 días de prueba con todas las funciones del plan. Si eliges Pro o Power, tendrás acceso al modo voz durante esa prueba." },
-      { "question": "¿Necesito tarjeta de crédito para empezar?", "answer": "No. Creas tu cuenta y obtienes 5 días gratis con el tutor por texto sin tarjeta. Cuando decidas elegir un plan, se requiere método de pago, pero tendrás 5 días de prueba gratis con todas las funciones del plan antes de que se realice el cobro." },
+      { "question": "¿La prueba gratuita incluye voz?", "answer": "Al crear tu cuenta obtienes 15 días gratis con el tutor por texto, sin tarjeta. Después, al elegir un plan, tienes otros 5 días de prueba con todas las funciones del plan. Si eliges Pro o Power, tendrás acceso al modo voz durante esa prueba." },
+      { "question": "¿Necesito tarjeta de crédito para empezar?", "answer": "No. Creas tu cuenta y obtienes 15 días gratis con el tutor por texto sin tarjeta. Cuando decidas elegir un plan, se requiere método de pago, pero tendrás 5 días de prueba gratis con todas las funciones del plan antes de que se realice el cobro." },
       { "question": "¿Puedo elegir qué estudiar?", "answer": "Sí. Seleccionas tus temas (viajes, trabajo, comida, etc.) y ajustas la sesión. El sistema genera tu lista al instante y puedes regenerarla cuando quieras." },
       { "question": "¿Qué idiomas están disponibles?", "answer": "Hoy puedes practicar inglés, portugués, francés, alemán, italiano y náhuatl. Puedes cambiar de idioma en cualquier momento sin perder tu progreso. Más idiomas próximamente." },
       { "question": "¿Puedo cancelar mi suscripción?", "answer": "Sí, puedes cancelar en cualquier momento desde tu cuenta. No hay permanencia ni cargos por cancelación. Tu acceso sigue activo hasta el final del periodo pagado." },
@@ -149,7 +148,7 @@
   },
   "cta": {
     "title": "Empieza a practicar hoy mismo",
-    "subtitle": "Crea tu cuenta en segundos y obtén <strong>5 días gratis</strong> con el tutor por texto. Sin tarjeta de crédito. Elige tus temas, practica con IA y cuando estés listo elige un plan con 5 días de prueba incluidos.",
+    "subtitle": "Crea tu cuenta en segundos y obtén <strong>15 días gratis</strong> con el tutor por texto. Sin tarjeta de crédito. Elige tus temas, practica con IA y cuando estés listo elige un plan con 5 días de prueba incluidos.",
     "mascotAlt": "Tlahto, la mascota de Tlahtolli, saludando",
     "ctaStart": "Empieza gratis"
   },

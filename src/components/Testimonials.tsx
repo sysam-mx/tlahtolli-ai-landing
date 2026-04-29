@@ -57,7 +57,7 @@ const testimonials = [
     },
     {
       content:
-        'Me gustó que los 5 días gratis me dieron suficiente tiempo para decidir. Ahora con el plan Pro puedo practicar por voz y texto sin complicaciones.',
+        'Me gustó que los 15 días gratis me dieron suficiente tiempo para decidir. Ahora con el plan Pro puedo practicar por voz y texto sin complicaciones.',
       author: {
         name: 'Fernanda Torres',
         role: 'Emprendedora',

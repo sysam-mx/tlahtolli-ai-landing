@@ -85,8 +85,7 @@ export function Hero() {
               {t('titleEnd')}
             </h1>
             <p className="mt-8 text-pretty text-lg font-medium text-slate-600 sm:text-xl/8">
-              {t('subtitle')}{' '}
-              <strong className="text-tlahtolli-secondary">{t('freeTrialBold')}</strong> {t('freeTrialSuffix')}
+              {t('subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button

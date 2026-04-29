@@ -9,7 +9,7 @@ export function CallToAction() {
   const t = useTranslations('cta')
 
   return (
-    <section className="relative isolate mt-32 px-6 py-32 sm:mt-40 sm:py-40 lg:px-8">
+    <section className="relative isolate overflow-hidden mt-32 px-6 py-32 sm:mt-40 sm:py-40 lg:px-8">
       {/* Background gradient blob */}
       <div
         aria-hidden="true"
@@ -43,7 +43,7 @@ export function CallToAction() {
             <Image
               src={tlahtoIntroductionV1}
               alt={t('mascotAlt')}
-              className="drop-shadow-xl"
+              className="w-48 sm:w-64 lg:w-[360px] drop-shadow-xl"
               width={360}
               height={468}
               priority={false}

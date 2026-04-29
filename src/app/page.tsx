@@ -8,7 +8,6 @@ import { Languages } from '@/components/Languages'
 import { Mobile } from '@/components/Mobile'
 import { Personalization } from '@/components/Personalization'
 import { Pricing } from '@/components/Pricing'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Problem } from '@/components/Problem'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Solution } from '@/components/Solution'
@@ -23,7 +22,6 @@ export default function Home() {
         <Problem />
         <Solution />
         <HowItWorks />
-        <PrimaryFeatures />
         <SecondaryFeatures />
         <Personalization />
         <Pricing />
